@@ -1,0 +1,39 @@
+@import '../../design-tokens/base.styles';
+
+.weather_main_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;        
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    @media (min-width: 600px) {
+        grid-column-end: 2;
+    }
+    &_icon {
+        height: 100%;
+    }
+    &_description {
+        margin: 0rem auto 2rem auto;
+        display: flex;
+        flex-direction: column;;
+        justify-content: space-around;
+        width: 60%;
+        max-width: 10rem;
+        height: 3rem;
+        @media (min-width: 600px) {
+            flex-direction: row;
+        }
+    }
+}
+
+.weather_basic_info {
+    min-width: 10rem;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1rem auto;
+}

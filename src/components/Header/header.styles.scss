@@ -1,0 +1,23 @@
+@import '../../design-tokens/base.styles';
+
+
+.header {
+    border-bottom: 1px solid $color-border;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+
+.logo {
+    font-size: $info-text-size;
+    font-weight: 700;
+    &--welcome_screen {
+        font-size: 1.5rem;
+        margin: 0.5rem
+    }
+}

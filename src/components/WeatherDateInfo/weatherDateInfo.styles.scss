@@ -1,0 +1,15 @@
+@import '../../design-tokens/base.styles';
+@import '../../design-tokens/info_text.styles';
+
+.date_info {
+    display: none;
+    @media (min-width: 600px) {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+

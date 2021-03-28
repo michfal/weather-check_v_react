@@ -1,6 +1,6 @@
 import './App.css';
 
-import CurrentDayPage from './pages/CurrentDayPage.components'
+import CurrentDayPage from './pages/CurrentDay/CurrentDayPage.components'
 
 function App() {
   return (
