@@ -1,0 +1,10 @@
+@import '../../design-tokens/base.styles';
+
+.main_display {
+    background-image: linear-gradient(to bottom right, #403D3F, #131313);
+    min-height: 14rem;
+    border-bottom: 1px solid $color-border;
+    display: grid;
+    grid-template-columns: minmax(20px, auto) minmax(120px, 500px) minmax(120px, 500px) minmax(20px, auto);
+    grid-template-rows: 1.8rem 1.8rem auto auto;
+}
