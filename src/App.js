@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 
 import CurrentDayPage from './pages/CurrentDay/CurrentDayPage.components'
 

@@ -1,0 +1,42 @@
+@import '../../design-tokens/base.styles';
+
+.add_info {
+    min-height: 4.5rem;
+    width: 90%;
+    padding-top: 0.3rem;
+    max-width: 14rem;
+    margin: auto;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: space-around;
+    @media (min-width: 600px) {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 3;
+    }
+    &_block {
+        border-radius: 0.5rem;
+        width: 3.6rem;
+        height: 3.6rem;
+        background-image: linear-gradient(to bottom right, #9DEF41, #6BBD10);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &_img {
+            margin: 2px auto auto auto;
+            height: 60%;
+            width: 60%;
+        }
+        &_display {
+            color: $color-graphite1;
+            font-size: $add_info-text-size;
+            font-weight: 700;
+            margin: auto;
+        }
+    }
+
+}
