@@ -1,6 +1,6 @@
 import './weatherMainInfo.styles.scss';
 
-import weatherIcons from '../WeatherIcons/weatherIcons.components'
+import weatherIcons from '../WeatherIcons/weatherIcons.components';
 
 function WeatherMainInfo() {
     // console.log(weatherIcons['01d'])
