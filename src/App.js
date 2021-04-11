@@ -1,11 +1,11 @@
 import './App.scss';
 
-import CurrentDayPage from './pages/CurrentDay/CurrentDayPage.components'
+import MainPage from './pages/MainPage/MainPage.components'
 
 function App() {
   return (
     <div className="App">
-        <CurrentDayPage />   
+        <MainPage />   
     </div>
   );
 }

@@ -2,9 +2,9 @@ import React from 'react';
 
 import './weatherAddInfo.styles.scss';
 
-import humidity from '../../assets/humidity_icon.svg';
-import wind from '../../assets/wind_icon.svg'
-import pressure from '../../assets/pressure_icon.svg'
+import humidity from '../../../assets/humidity_icon.svg';
+import wind from '../../../assets/wind_icon.svg'
+import pressure from '../../../assets/pressure_icon.svg'
 
 
 
