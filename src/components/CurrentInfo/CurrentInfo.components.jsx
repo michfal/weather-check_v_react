@@ -6,11 +6,11 @@ import WeatherAddInfo from '../WeatherAddInfo/WeatherAddInfo.components';
 
 import './mainPage.styles.scss';
 
-function CurrentInfoPage() {
+function CurrentInfoPage({handleSubmit}) {
     return (
       <div className="main_display">
         <Header />
-        <SearchField />
+        <SearchField handleSubmit={handleSubmit}/>
         <WeatherDateInfo />
         <WeatherMainInfo />
         <WeatherAddInfo />       

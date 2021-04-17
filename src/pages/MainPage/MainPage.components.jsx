@@ -1,10 +1,10 @@
 import CurrentInfo from '../../components/CurrentInfo/CurrentInfo.components';
 import FutureInfo from '../../components/FutureInfo/FutureInfo.components';
 
-function CurrentDayPage() {
+function CurrentDayPage({handleSubmit}) {
     return (
-      <div>
-        <CurrentInfo />
+      <div className="">
+        <CurrentInfo handleSubmit={handleSubmit}/>
         <FutureInfo />
       </div>
       
