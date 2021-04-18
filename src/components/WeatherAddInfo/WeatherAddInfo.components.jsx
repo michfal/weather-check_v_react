@@ -8,20 +8,21 @@ import pressure from '../../assets/pressure_icon.svg'
 
 
 
-function WeatherAddInfo() {
+function WeatherAddInfo(currentData) {
+    const data = currentData.currentData;
     return(
         <div className="add_info j-add_info hidden" >
             <div className="add_info_block">
                 <img className="add_info_block_img" src={humidity} alt="" />
-                <h2 className="add_info_block_display">87%</h2>
+                <h2 className="add_info_block_display">{data.humidity}%</h2>
             </div>
             <div className="add_info_block">
                 <img className="add_info_block_img" src={wind} alt="" />
-                <h2 className="add_info_block_display">0.51 km/h</h2>
+                <h2 className="add_info_block_display">{data.wind_speed} km/h</h2>
             </div>
             <div className="add_info_block">
                 <img className="add_info_block_img" src={pressure} alt="" />
-                <h2 className="add_info_block_display">1021 hPa</h2>
+                <h2 className="add_info_block_display">{data.pressure} hPa</h2>
             </div>
         </div>
     )

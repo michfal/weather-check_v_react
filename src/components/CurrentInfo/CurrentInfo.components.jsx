@@ -11,9 +11,9 @@ function CurrentInfoPage({handleSubmit, currentData}) {
       <div className="main_display">
         <Header />
         <SearchField handleSubmit={handleSubmit}/>
-        <WeatherDateInfo />
+        <WeatherDateInfo currentData={currentData}/>
         <WeatherMainInfo currentData={currentData}/>
-        <WeatherAddInfo />       
+        <WeatherAddInfo currentData={currentData}/>       
       </div>
 
     )
