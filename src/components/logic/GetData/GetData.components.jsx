@@ -17,7 +17,6 @@ export  async function getWeatherForCity(coordinates, key) {
   try {
     const response = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&units=metric&appid=${key}`)
     const data = await response.json()
-    console.log(data)
     return data
     
   } catch (err) {

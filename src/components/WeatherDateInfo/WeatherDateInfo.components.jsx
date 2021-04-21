@@ -4,11 +4,9 @@ import './weatherDateInfo.styles.scss';
 
 function WeatherDateInfo(currentData) {
     const data = currentData.currentData;
-    console.log(data)
     const date = dateConvert(data.dt);
     const sunrise = timeConvert(data.sunrise);
     const sunset = timeConvert(data.sunset);
-    console.log(date)
     return(
         <div className="date_info">
             <h2 className="info_text info_text--align_right j-day">{date}</h2>

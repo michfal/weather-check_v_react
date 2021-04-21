@@ -3,10 +3,8 @@ import './weatherMainInfo.styles.scss';
 import weatherIcons from '../WeatherIcons/weatherIcons.components';
 
 function WeatherMainInfo(currentData) {
-    // console.log(weatherIcons['01d'])
     const data = currentData.currentData;
     const icon = weatherIcons[data.weather[0].icon];
-    console.log(data)
     return(
         <div className="weather_main_info">
             <div className="weather_basic_info">

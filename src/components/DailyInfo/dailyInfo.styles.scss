@@ -50,7 +50,6 @@
             margin: auto;
             &--big {
                 font-size: 1rem;
-                // margin-bottom: 0px;
             }
         }
         &_image {
@@ -60,7 +59,6 @@
         }
         &_temperature {
             flex-direction: row;
-            // padding: 6px;
             &_values_container {
                 display: flex;
                 width: 2.5rem;
@@ -72,8 +70,10 @@
     }
 }
 
-.weather_icon_container{
+.weather_icon_container {
     height: 100%;
-    // margin: auto 2px;
-    // border: 1px solid red;
+}
+
+.seven_days_container {
+    background-color: $color-graphite-bg;
 }
