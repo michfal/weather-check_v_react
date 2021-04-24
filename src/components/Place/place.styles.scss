@@ -2,9 +2,6 @@
 
 
 
-
-
-
 .place {
     display: flex;
     justify-content: space-between;
@@ -17,8 +14,5 @@
         vertical-align: middle;
         display: inline;
         font-size: $info-text-size
-    }
-    &_form {
-        margin: auto auto auto 0;
     }
 }
