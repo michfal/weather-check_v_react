@@ -8,11 +8,11 @@ function WeatherMainInfo(currentData) {
     return(
         <div className="weather_main_info">
             <div className="weather_basic_info">
-            <div className="weather_icon_container" dangerouslySetInnerHTML={{ __html: icon }} />
-            <h2 className="info_text info_text--temperature_main">{Math.round(data.temp)}{'\u00b0'}C</h2>
+                <div className="weather_icon_container" dangerouslySetInnerHTML={{ __html: icon }} />
+                <h2 className="info_text temperature_main">{Math.round(data.temp)}{'\u00b0'}C</h2>
             </div>
             <div className="weather_main_info_description">
-              <h2 className="info_text info_text--align_left">{data.weather[0].description}</h2>
+              <h2 className="info_text info_text--align_left info_text--center_mobile">{data.weather[0].description}</h2>
               <h2 className="info_text">Feels like {Math.round(data.feels_like)}{'\u00b0'}C</h2>
             </div>
         </div>

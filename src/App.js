@@ -12,29 +12,30 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      current: {
-        clouds: 40,
-        dew_point: 8.2,
-        dt: 1618749143,
-        feels_like: 8,
-        humidity: 66,
-        pressure: 1019,
-        sunrise: 1618716715,
-        sunset: 1618767493,
-        temp: 14.47,
-        uvi: 1.84,
-        visibility: 10000,
-        weather: [
-          {
-            description: "scattered clouds",
-            icon: "03d",
-            id: 802,
-            main: "Clouds"
-          }
-        ],
-        wind_deg: 0,
-        wind_speed: 1.03,
-      },
+      // current: {
+      //   clouds: 40,
+      //   dew_point: 8.2,
+      //   dt: 1618749143,
+      //   feels_like: 8,
+      //   humidity: 66,
+      //   pressure: 1019,
+      //   sunrise: 1618716715,
+      //   sunset: 1618767493,
+      //   temp: 14.47,
+      //   uvi: 1.84,
+      //   visibility: 10000,
+      //   weather: [
+      //     {
+      //       description: "scattered clouds",
+      //       icon: "03d",
+      //       id: 802,
+      //       main: "Clouds"
+      //     }
+      //   ],
+      //   wind_deg: 0,
+      //   wind_speed: 1.03,
+      // },
+      current: '',
       daily: '',
     }
   }
@@ -60,7 +61,7 @@ class App extends React.Component {
 
   render() {
     console.log(this.state.daily)
-    if (this.state.daily === '') {
+    if (this.state.current === '') {
       return (
         <div className="App">
           <IntroPage handleSubmit={this.handleSubmit}/>
