@@ -2,7 +2,8 @@
 
 .main_display {
     background-image: linear-gradient(to bottom right, #403D3F, #131313);
-    min-height: 14rem;
+    min-height: 12rem;
+    height: 50vh;
     border-bottom: 1px solid $color-border;
     display: grid;
     grid-template-columns: minmax(20px, auto) minmax(120px, 500px) minmax(120px, 500px) minmax(20px, auto);

@@ -6,11 +6,11 @@
     &--large_scrn {
         display: none;
     }
-    &--temperature_main {
-        font-size: 2.7rem;
-        color: #FFFFFF;
-        margin-right: 10%;
-    }
+    // &--temperature_main {
+    //     font-size: 2.7rem;
+    //     color: #FFFFFF;
+    //     margin-right: 10%;
+    // }
     &--align_right {
         margin-right: 0px;
         text-align: right;
@@ -19,5 +19,10 @@
         margin-left: 0px;
         text-align: left;
         margin-right: 0.1rem;
+    }
+    &--center_mobile {
+        @media (max-width: 600px) {
+            text-align: center;
+        }
     }
 }
