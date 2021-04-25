@@ -53,13 +53,9 @@ class App extends React.Component {
 
   handleSubmit = (e) => {
     const cityName = e.target[1].value;
-    // console.log(cityName);
-    
-    this.setState({ redirect: "/home" });
-    console.log(this.state)
+
     this.getWeather(cityName, process.env.REACT_APP_API_KEY);
     e.preventDefault();
-    
   }
 
   render() {
