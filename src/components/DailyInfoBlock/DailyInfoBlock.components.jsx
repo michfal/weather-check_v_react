@@ -11,7 +11,7 @@ import '../DailyInfo/dailyInfo.styles.scss';
 
 function DailyInfoBlock(dailyData) {
     const data = dailyData.dailyData 
-    console.log(data)
+    // console.log(data)
     
     return(
         data.map((e) => {
