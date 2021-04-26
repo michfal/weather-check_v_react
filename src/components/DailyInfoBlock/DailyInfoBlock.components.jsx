@@ -2,6 +2,7 @@ import React from "react";
 import nextId from "react-id-generator";
 
 import weatherIcons from '../WeatherIcons/weatherIcons.components';
+import {dateConvert} from '../logic/TimeConvert/TimeConvert.components'
 
 import humidity from '../../assets/humidity_icon_white.svg';
 import wind from '../../assets/wind_icon_white.svg';
@@ -11,7 +12,7 @@ import '../DailyInfo/dailyInfo.styles.scss';
 
 function DailyInfoBlock(dailyData) {
     const data = dailyData.dailyData 
-    // console.log(data)
+    console.log(dateConvert(data[0].dt))
     
     return(
         data.map((e) => {
@@ -22,7 +23,7 @@ function DailyInfoBlock(dailyData) {
                 <div key={uniqeId} className="display display_blocks">
                 
                     <div className="display__sub_block display__sub_block_date">
-                        <h2 className="display__sub_block_header">11 Apr</h2>
+                        <h2 className="display__sub_block_header">{dateConvert(e.dt)}</h2>
                     </div>
                 
                     <div className="display__sub_block display__sub_block_temperature">

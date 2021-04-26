@@ -8,7 +8,6 @@ function WeatherMainInfo(currentData) {
     const data = currentData.currentData;
     const icon = weatherIcons[data.weather[0].icon];
     const description = capitalize(data.weather[0].description)
-    console.log(description)
     return(
         <div className="weather_main_info">
             <div className="weather_basic_info">

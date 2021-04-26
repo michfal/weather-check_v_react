@@ -60,7 +60,7 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state.daily)
+    // console.log(this.state.daily)
     if (this.state.current === '') {
       return (
         <div className="App">
