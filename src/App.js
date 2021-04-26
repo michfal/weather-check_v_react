@@ -27,7 +27,7 @@ class App extends React.Component {
       //   weather: [
       //     {
       //       description: "scattered clouds",
-      //       icon: "03d",
+      //       icon: "13n",
       //       id: 802,
       //       main: "Clouds"
       //     }
