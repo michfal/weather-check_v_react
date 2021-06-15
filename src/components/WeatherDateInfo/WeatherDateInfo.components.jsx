@@ -1,4 +1,4 @@
-import {timeConvert, dateConvert} from '../logic/TimeConvert/TimeConvert.components';
+import {timeConvert, dateConvert} from '../logic/TimeConvert/TimeConvert';
 
 import './weatherDateInfo.styles.scss';
 

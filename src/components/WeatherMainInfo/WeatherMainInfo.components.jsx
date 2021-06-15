@@ -1,5 +1,5 @@
 import weatherIcons from '../WeatherIcons/weatherIcons.components';
-import capitalize from '../logic/Capitalize/capitalize.components';
+import Capitalize from '../logic/Capitalize/Capitalize';
 
 import './weatherMainInfo.styles.scss';
 
@@ -7,7 +7,7 @@ import './weatherMainInfo.styles.scss';
 function WeatherMainInfo(currentData) {
     const data = currentData.currentData;
     const icon = weatherIcons[data.weather[0].icon];
-    const description = capitalize(data.weather[0].description)
+    const description = Capitalize(data.weather[0].description)
     return(
         <div className="weather_main_info">
             <div className="weather_basic_info">
