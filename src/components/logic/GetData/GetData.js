@@ -25,3 +25,15 @@ export  async function getWeatherForCity(coordinates, key) {
   }
    
 }
+
+// export async function getWeather (city, key, state) {
+//   try {
+//   const coordinates = await getCoordinates(city, key);
+//   const weatherData = await getWeatherForCity(coordinates, key);
+//   console.log(state) 
+//   state.setState({current: weatherData.current, daily: weatherData.daily} );
+//   console.log(state)
+//   }  catch (err) {
+//       console.log(err)
+//   }
+// }

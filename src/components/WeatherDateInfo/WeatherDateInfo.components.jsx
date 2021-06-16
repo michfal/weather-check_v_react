@@ -1,20 +1,24 @@
-import {timeConvert, dateConvert} from '../logic/TimeConvert/TimeConvert.components';
+import {Component} from 'react';
+import WeatherDataContext from '../../context/WeatherDataContext';
+import {timeConvert, dateConvert} from '../logic/TimeConvert/TimeConvert';
 
 import './weatherDateInfo.styles.scss';
 
-function WeatherDateInfo(currentData) {
-    const data = currentData.currentData;
-    const date = dateConvert(data.dt);
-    const sunrise = timeConvert(data.sunrise);
-    const sunset = timeConvert(data.sunset);
-    return(
-        <div className="date_info">
-            <h2 className="info_text info_text--align_right j-day">{date}</h2>
-            <h2 className="info_text info_text--align_right j-sunrise">Sunrise {sunrise}</h2>
-            <h2 className="info_text info_text--align_right j-sunset">Sunset {sunset}</h2>
-        </div>
-    )
-
+class WeatherDateInfo extends Component {
+    
+    render() {
+        return(
+            <WeatherDataContext.Consumer>
+                {(context) => (
+                    <div className="date_info">
+                        <h2 className="info_text info_text--align_right">{dateConvert(context.state.current.dt)}</h2>
+                        <h2 className="info_text info_text--align_right">Sunrise {timeConvert(context.state.current.sunrise)}</h2>
+                        <h2 className="info_text info_text--align_right">Sunset {timeConvert(context.state.current.sunset)}</h2>
+                    </div>
+                )}
+            </WeatherDataContext.Consumer>
+        )
+    }
 }
 
 export default WeatherDateInfo;

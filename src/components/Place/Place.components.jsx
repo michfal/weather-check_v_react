@@ -1,4 +1,4 @@
-import {currentTime} from '../logic/TimeConvert/TimeConvert.components';
+import {currentTime} from '../logic/TimeConvert/TimeConvert';
 import Search from '../Search/Search.components';
 
 
