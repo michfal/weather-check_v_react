@@ -12,9 +12,9 @@ function CurrentInfoPage() {
       <div className="main_display">
         <Header />
         <Place />
-        {/* <WeatherDateInfo />
+        <WeatherDateInfo />
         <WeatherMainInfo />
-        <WeatherAddInfo />        */}
+        <WeatherAddInfo />       
       </div>
 
     )

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { useHistory, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import WeatherDataContext from './WeatherDataContext';
 import {getWeatherForCity, getCoordinates} from '../components/logic/GetData/GetData';
 
@@ -30,11 +30,6 @@ class WeatherDataProvider extends Component {
                     }
                 },
 
-                redirectToMain: async (e) => {
-                  e.preventDefault();
-                  this.props.history.push("/main");
-                  // history.push('/main')
-                } 
             }}>
               {this.props.children}
             </WeatherDataContext.Provider>

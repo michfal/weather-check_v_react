@@ -1,4 +1,4 @@
-import  React, {Component} from "react";
+import React, {Component} from "react";
 import WeatherDataContext from '../../context/WeatherDataContext';
 import nextId from "react-id-generator";
 
