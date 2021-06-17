@@ -1,4 +1,3 @@
-
 import Place from '../Place/Place.components';
 import Header from '../Header/Header.component';
 import WeatherDateInfo from '../WeatherDateInfo/WeatherDateInfo.components';
@@ -14,9 +13,8 @@ function CurrentInfoPage() {
         <Place />
         <WeatherDateInfo />
         <WeatherMainInfo />
-        <WeatherAddInfo />       
+        <WeatherAddInfo />
       </div>
-
     )
   } 
 

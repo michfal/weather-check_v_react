@@ -6,8 +6,6 @@ import humidity from '../../assets/humidity_icon.svg';
 import wind from '../../assets/wind_icon.svg'
 import pressure from '../../assets/pressure_icon.svg'
 
-
-
 class WeatherAddInfo extends Component {
     render() {
         return(
@@ -31,6 +29,6 @@ class WeatherAddInfo extends Component {
             </WeatherDataContext.Consumer>           
         )        
     }
-}
+};
 
 export default WeatherAddInfo;

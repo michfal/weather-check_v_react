@@ -27,10 +27,9 @@ class WeatherMainInfo extends Component {
                         </div>
                     </div>
                 )}
-
             </WeatherDataContext.Consumer>
         )
     }
-}
+};
 
 export default WeatherMainInfo;

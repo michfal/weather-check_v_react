@@ -12,6 +12,6 @@ function IntroPage() {
             </div>  
         </div>
     )
-}
+};
 
 export default IntroPage;
