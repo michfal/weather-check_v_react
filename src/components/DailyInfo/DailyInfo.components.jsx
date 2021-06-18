@@ -7,7 +7,7 @@ function FutureInfo() {
         return(
             <div className="seven_days_container">
                 <DailyInfoHeader />
-                <DailyInfoBlock />   
+                <DailyInfoBlock />
             </div>
         )
 }

@@ -1,5 +1,3 @@
-
-
 export  async function getCoordinates(city, key) {
     try {
       const responseCoord = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`)
@@ -10,8 +8,7 @@ export  async function getCoordinates(city, key) {
       console.log("coordinates fetch error")
       console.log(err)
     }
-    
-}
+};
 
 export  async function getWeatherForCity(coordinates, key) {
   try {
@@ -23,17 +20,4 @@ export  async function getWeatherForCity(coordinates, key) {
     console.log("city fetch error")
     console.log(err)
   }
-   
-}
-
-// export async function getWeather (city, key, state) {
-//   try {
-//   const coordinates = await getCoordinates(city, key);
-//   const weatherData = await getWeatherForCity(coordinates, key);
-//   console.log(state) 
-//   state.setState({current: weatherData.current, daily: weatherData.daily} );
-//   console.log(state)
-//   }  catch (err) {
-//       console.log(err)
-//   }
-// }
+};
